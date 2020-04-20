@@ -2,9 +2,10 @@
 * If a number is divisible by 3 print 'Fizz'
 * If a number is divisible by 5 print 'Buzz'
 * If a number is divisible by 3 and 5 print 'FizzBuzz'
-
+* Otherwise print the number
 */
 
+var i;
 for(i = 1; i < 100; i++) {
     fizzBuzz(i);
     }
@@ -20,5 +21,8 @@ function fizzBuzz(i){
 
     if(i%3 == 0){
         console.log("Fizz");
+    }
+    else{
+        console.log(i);
     }
 }
